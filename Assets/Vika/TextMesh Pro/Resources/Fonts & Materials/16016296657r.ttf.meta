@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ed2bf99c0487ee04fa7135f2b4167ddc
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Villa Avgustina
+  fontNames:
+  - Villa Avgustina
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5699554c90c6eee43831235a741beecc, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
