@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Vika's Scene.unity
     guid: 4c9d253bda85de743b3d563fe63e08cf
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Vika/Scenes/GameplayScene.unity
+    guid: 7f8d3e34d8e71c24f80fe1948760dc59
   m_configObjects: {}
