@@ -22,4 +22,10 @@ public class Plate : MonoBehaviour
         }
        
     }
+    public void GoUp() 
+    {
+        transform.position = transform.position + new Vector3(0, 0.2f, 0);
+        gameObject.GetComponent<BoxCollider>().enabled = true;
+        activate = false;
+    }
 }

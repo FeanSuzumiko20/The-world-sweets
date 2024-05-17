@@ -10,7 +10,6 @@ public class PlayerHealth : MonoBehaviour
     public float closedamage = 10;
     public RectTransform valueRectTransform;
     public GameObject gameplayUI;
-    public GameObject BossUI;
     public GameObject gameOverScreen;
     public GameObject HealEffect;
     public Animator animator;
@@ -68,7 +67,6 @@ public class PlayerHealth : MonoBehaviour
     public void PlayerIsDead()
     {
         gameplayUI.SetActive(false);
-        BossUI.SetActive(false);
         gameOverScreen.SetActive(true);
         GetComponent<PlayerController>().enabled = false;
         GetComponent<FireballCaster>().enabled = false;
