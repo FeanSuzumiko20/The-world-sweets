@@ -7,10 +7,11 @@ public class Spikes2 : MonoBehaviour
     public int secondsoff = 100;
     public int secondson = 200;
     public int seconds = 100;
-     public int damage =10;
+    public int damage =10;
+    PlayerHealth playerHealth;
     void Start()
     {
-
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
     }
 
     void Update()
@@ -32,10 +33,9 @@ public class Spikes2 : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        var _playerHealth = other.gameObject.GetComponent<PlayerHealth>();
-        if (_playerHealth != null)
+        if (playerHealth != null)
         {
-            _playerHealth.DealDamage(damage);
+            playerHealth.DealDamage(damage);
         }
     }
 }
