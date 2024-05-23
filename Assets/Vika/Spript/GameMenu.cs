@@ -16,6 +16,7 @@ public class GameMenu : MonoBehaviour
             camera.enabled = false;
            player.enabled = false;
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
     public void Return()
