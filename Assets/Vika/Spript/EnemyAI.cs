@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
     public float ViewAngle;
     public float damage = 30;
     public Animator animator;
-
+    public Fire Trigger;
     private NavMeshAgent _navMeshAgent;
     private bool _isPlayerNoticed;
     private PlayerHealth _playerHealth;
@@ -39,12 +39,12 @@ public class EnemyAI : MonoBehaviour
     {
         var direction = player.transform.position - transform.position;
 
-        if (Vector3.Angle(transform.forward, direction) < ViewAngle)
+        if (Vector3.Angle(transform.forward, direction) < ViewAngle && Trigger.OnZone == true)
         {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position + Vector3.up, direction, out hit))
+            if (Physics.Raycast(transform.position + Vector3.up, direction, out hit) )
             {
-                if (hit.collider.gameObject == player.gameObject)
+                if (hit.collider.gameObject == player.gameObject )
                 {
                     _isPlayerNoticed = true;
                     animator.SetTrigger("noticed");
@@ -62,7 +62,8 @@ public class EnemyAI : MonoBehaviour
         ChaseUpdate();
         PatrolUpdate();
         AttackUpdate();
-        
+       
+
     }
 
     private void PatrolUpdate()
@@ -83,17 +84,21 @@ public class EnemyAI : MonoBehaviour
     }
     private void ChaseUpdate()
     {
-        if (_isPlayerNoticed)
+        if (_isPlayerNoticed && Trigger.OnZone == true)
         {
             _navMeshAgent.destination = player.transform.position;
             
+        }
+        else
+        {
+            PickNewPatrolPoint();
         }
     }
     private void AttackUpdate()
     {
         if (_isPlayerNoticed)
         {
-            if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
+            if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance && Trigger.OnZone == true )
             {
                 _playerHealth.DealDamage(damage * Time.deltaTime);
                 animator.SetTrigger("hit");

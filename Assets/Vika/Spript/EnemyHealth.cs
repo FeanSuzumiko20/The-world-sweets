@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour
     public Animator animator;
     public int EnemyCount = 0;
     public EnemyAI enemy;
+    public bool activate = false;
     
 
     public bool IsAlive()
@@ -33,7 +34,7 @@ public class EnemyHealth : MonoBehaviour
         animator.SetTrigger("hit");
         if (_currentValue <= 0)
         {
-                Destroy(gameObject);
+            activate = true;
             
         }
         else
