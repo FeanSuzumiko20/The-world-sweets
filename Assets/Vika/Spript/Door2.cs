@@ -6,6 +6,7 @@ public class Door2 : MonoBehaviour
 {
     public List<EnemyHealth> Enemy;
     public List<GameObject> Enemy2;
+    public Animator animator;
     public bool opened = false;
     private void Open()
     {
