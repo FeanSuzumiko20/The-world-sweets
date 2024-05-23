@@ -1416,7 +1416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1820}
@@ -27979,27 +27979,37 @@ PrefabInstance:
     - target: {fileID: 2279805373733776422, guid: 6f2c9e982b59be041bf055726e921cb3,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2519918774337615305, guid: 6f2c9e982b59be041bf055726e921cb3,
         type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 1231318089}
+    - target: {fileID: 3150708581381886135, guid: 6f2c9e982b59be041bf055726e921cb3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4033541057537888128, guid: 6f2c9e982b59be041bf055726e921cb3,
         type: 3}
       propertyPath: m_UiScaleMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4033541057537888128, guid: 6f2c9e982b59be041bf055726e921cb3,
         type: 3}
       propertyPath: m_MatchWidthOrHeight
-      value: 0.481
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4033541057537888128, guid: 6f2c9e982b59be041bf055726e921cb3,
         type: 3}
       propertyPath: m_ReferenceResolution.x
-      value: 1117.1
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033541057537888128, guid: 6f2c9e982b59be041bf055726e921cb3,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1920
       objectReference: {fileID: 0}
     - target: {fileID: 5526755660200875673, guid: 6f2c9e982b59be041bf055726e921cb3,
         type: 3}
@@ -28014,7 +28024,32 @@ PrefabInstance:
     - target: {fileID: 6193769050158831824, guid: 6f2c9e982b59be041bf055726e921cb3,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 463.8
+      value: 417.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193769050158831824, guid: 6f2c9e982b59be041bf055726e921cb3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -224.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582132766943627809, guid: 6f2c9e982b59be041bf055726e921cb3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 102.039856
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582132766943627809, guid: 6f2c9e982b59be041bf055726e921cb3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -15.390001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582132766943627809, guid: 6f2c9e982b59be041bf055726e921cb3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -51.02008
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582132766943627809, guid: 6f2c9e982b59be041bf055726e921cb3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -29.895002
       objectReference: {fileID: 0}
     - target: {fileID: 8306438572136821936, guid: 6f2c9e982b59be041bf055726e921cb3,
         type: 3}
