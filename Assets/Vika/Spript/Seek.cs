@@ -8,6 +8,7 @@ public class Seek : MonoBehaviour
     public GameObject Effect;
     public GameObject Hint;
     public GameObject text;
+    public AudioSource audio;
     private void OnTriggerStay(Collider other)
     {
         var player = other.gameObject.GetComponent<PlayerController>();
@@ -20,6 +21,7 @@ public class Seek : MonoBehaviour
 
                 Effect.GetComponent<ParticleSystem>().Play();
                 text.SetActive(true);
+                audio.Play();
 
             }
         }

@@ -8,6 +8,7 @@ public class FireballCaster : MonoBehaviour
     public Fireball fireballPrefab;
     public Transform fireballSourceTransform;
     public Animator animator;
+    public AudioSource audio;
     
 
     void Update()
@@ -17,7 +18,8 @@ public class FireballCaster : MonoBehaviour
             var FireBall =Instantiate(fireballPrefab, fireballSourceTransform.position, fireballSourceTransform.rotation);
             FireBall.damage = damage;
             animator.SetTrigger("attack");
-            
+            audio.Play();
+
         }
         
     }

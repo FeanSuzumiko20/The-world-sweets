@@ -12,7 +12,8 @@ public class EnemyHealth : MonoBehaviour
     public int EnemyCount = 0;
     public EnemyAI enemy;
     public bool activate = false;
-    
+    public AudioSource audio;
+
 
     public bool IsAlive()
     {
@@ -40,6 +41,7 @@ public class EnemyHealth : MonoBehaviour
         else
         {
             animator.SetTrigger("hitted");
+            audio.Play();
         }
         
         

@@ -13,6 +13,10 @@ public class TriggerGold : MonoBehaviour
     float timer = 0;
     public bool dead = false;
     public GameObject DeathScreen;
+    public AudioSource audio;
+    public AudioSource audio2;
+    public AudioSource audio3;
+    public AudioSource audio4;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +32,9 @@ public class TriggerGold : MonoBehaviour
     {
         if (dead== true)
         {
-            Death.transform.position = Vector3.Lerp(pos, pos + new Vector3(0, -10, 0), timer / 3);
+            animator.SetBool("hit",true);
+            animator.ResetTrigger("bad");
+            Death.transform.position = Vector3.Lerp(pos, pos + new Vector3(0, -3, 0), timer / 1);
             timer += Time.deltaTime;
             StartCoroutine(Deathy());
         }
@@ -45,12 +51,16 @@ public class TriggerGold : MonoBehaviour
             animator.SetTrigger("bad");
             BadEndTrigger.move = false;
             BAdEnd.SetActive(true);
-
+            audio.Stop();
+            audio3.Play();
+            audio2.Play();
+            audio4.Play();
             StartCoroutine(waiter());
         }
     }
     IEnumerator Deathy()
     {
+        
         BAdEnd.SetActive(false);
         yield return new WaitForSeconds(1);
         DeathScreen.SetActive(true); 

@@ -17,6 +17,8 @@ public class SeekSucess : MonoBehaviour
     public GameObject key;
     public GameObject door;
     public bool created = false;
+    public AudioSource audio;
+    public AudioSource audio2;
     private void OnTriggerStay(Collider other)
     {
         var player = other.gameObject.GetComponent<PlayerController>();
@@ -25,6 +27,7 @@ public class SeekSucess : MonoBehaviour
             Hint.SetActive(true);
             if (Input.GetKey(KeyCode.E))
             {
+                audio2.Play();
                 Effect.GetComponent<ParticleSystem>().Play();
                 if (created == false)
                 {
@@ -33,7 +36,8 @@ public class SeekSucess : MonoBehaviour
                     created = true;
                     door.GetComponent<Collider>().enabled = false;
                     door.transform.Rotate(0, 90, 0);
-                    
+                    audio.Play();
+
                 }
 
             }

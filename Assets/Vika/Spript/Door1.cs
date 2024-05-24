@@ -7,6 +7,7 @@ public class Door1 : MonoBehaviour
     public List<Plate> Plates;
     public bool opened = false;
     public GameObject Dia;
+    public AudioSource audio;
     private void Open()
     {
         gameObject.GetComponent<Collider>().enabled = false;
@@ -15,6 +16,7 @@ public class Door1 : MonoBehaviour
             transform.Rotate(0, 90, 0);
             opened = true;
             Dia.SetActive(true);
+            audio.Play();
         }
     }
 

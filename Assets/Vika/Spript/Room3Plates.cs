@@ -9,6 +9,7 @@ public class Room3Plates : MonoBehaviour
     public GameObject door;
     private int currentstage = 0;
     private int i;
+    public AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,7 @@ public class Room3Plates : MonoBehaviour
         if (plates[0].activate == true && plates[1].activate == true && plates[2].activate == true && plates[3].activate == true && currentstage == 3)
         {
             door.transform.Rotate(0, 90, 0);
+            audio.Play();
             currentstage++;
         }
         if(plates[1].activate == true && currentstage < 1)

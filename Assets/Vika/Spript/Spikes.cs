@@ -8,6 +8,7 @@ public class Spikes : MonoBehaviour
     public int secondson = 200;
     public int seconds = 0;
     public int damage =10;
+    public AudioSource audio;
     PlayerHealth playerHealth;
     void Start()
     {
@@ -19,6 +20,7 @@ public class Spikes : MonoBehaviour
         if (seconds == secondsoff)
         {
             transform.position = transform.position + new Vector3(0, -2f, 0);
+            audio.Play();
 
         }
         if (seconds == secondson)

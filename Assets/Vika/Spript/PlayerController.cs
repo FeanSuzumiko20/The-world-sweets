@@ -43,21 +43,12 @@ public class PlayerController : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && _characterController.isGrounded)
-        {
-            _fallVelocity = -jumpForce;
-            animator.SetTrigger("jump");
-        }
-
         
     }
-    void FixedUpdate() {
-       // if (_characterController.isGrounded)
-        {
-          //  _fallVelocity = 0;
-        }
-        _characterController.Move(_moveVector * speed * Time.fixedDeltaTime);
-        _fallVelocity += gravity * Time.fixedDeltaTime; 
+    void FixedUpdate()
+    {
+        _characterController.Move((_moveVector * speed * Time.fixedDeltaTime)/2);
+        _fallVelocity += gravity * Time.fixedDeltaTime;
         _characterController.Move(Vector3.down * _fallVelocity * Time.fixedDeltaTime);
-            }
+    }
 }

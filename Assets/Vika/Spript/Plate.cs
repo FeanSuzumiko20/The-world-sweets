@@ -6,6 +6,7 @@ public class Plate : MonoBehaviour
 {
     public PlayerController player;
     public bool activate = false;
+    public AudioSource audio;
     void Start()
     {
 
@@ -19,6 +20,7 @@ public class Plate : MonoBehaviour
             transform.position = transform.position + new Vector3(0, -0.2f,0 );
             gameObject.GetComponent<BoxCollider>().enabled = false;
             activate = true;
+            audio.Play();
         }
        
     }

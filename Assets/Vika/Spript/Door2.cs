@@ -8,6 +8,7 @@ public class Door2 : MonoBehaviour
     public List<GameObject> Enemy2;
     public Animator animator;
     public bool opened = false;
+    public AudioSource audio;
     private void Open()
     {
         gameObject.GetComponent<Collider>().enabled = false;
@@ -33,6 +34,7 @@ public class Door2 : MonoBehaviour
         {
 
             Open();
+            audio.Play();
         }
     }
 }
