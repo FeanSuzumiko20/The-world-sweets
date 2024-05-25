@@ -7,7 +7,9 @@ public class Hall : MonoBehaviour
     public List<GameObject> Mc;
     public CharacterController player;
     public GameObject GameplayUI;
+    public PlayerController playerMove;
     public int current = 0;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,8 @@ public class Hall : MonoBehaviour
         if (player2 != null)
         {
             player.enabled = false;
+            playerMove.enabled = false;
+            animator.SetBool("run", false);
             GameplayUI.SetActive(false);
             Mc[current].SetActive(true);
             
@@ -44,6 +48,7 @@ public class Hall : MonoBehaviour
         {
             Mc[current].SetActive(false);
             player.enabled = true;
+            playerMove.enabled = true;
             GameplayUI.SetActive(true);
             gameObject.GetComponent<BoxCollider>().enabled = false;
         }

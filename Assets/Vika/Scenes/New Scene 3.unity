@@ -8629,7 +8629,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -11280,9 +11280,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ee9ac1eb11d5de44b85fd34b834c893a, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.52
+  m_Volume: 1
   m_Pitch: 0.74
   Loop: 0
   Mute: 0
@@ -12057,6 +12057,30 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1883714326}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1883714332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883714327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cfd218c28e29714886e44bb4d0b73f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerFootsteps: {fileID: 1825915500}
+  footstepsClips:
+  - {fileID: 8300000, guid: e51a23cf5b59e8a4494d935ed6cb323d, type: 3}
+  - {fileID: 8300000, guid: dc4e259554c57214f97db6e8d2ca9e93, type: 3}
+  - {fileID: 8300000, guid: a914cee89d8f5a54dbdad75c33c89cc5, type: 3}
+  - {fileID: 8300000, guid: e839671650885de47b1c0ab4c7335123, type: 3}
+  - {fileID: 8300000, guid: 19ac50c7a92bafc4897acabd7cfeb093, type: 3}
+  - {fileID: 8300000, guid: da0587482a8153f4ba02127a34d158d0, type: 3}
+  - {fileID: 8300000, guid: 92ed813fb1394ad40bc194b5e4b5edc3, type: 3}
+  - {fileID: 8300000, guid: f7c59a48e83119d40ad9c11c6c0feff2, type: 3}
+  - {fileID: 8300000, guid: 4826007c6f6ad0840ac2f7375e247ed2, type: 3}
+  - {fileID: 8300000, guid: b3ebd4af26d84304aaac22daa2ed767b, type: 3}
 --- !u!1001 &1892722094
 PrefabInstance:
   m_ObjectHideFlags: 0

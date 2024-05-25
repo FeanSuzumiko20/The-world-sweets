@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 public class TriggerGoodEnd : MonoBehaviour
 {
     public GameObject GoodEnd;
+    public AudioSource step;
     private void OnTriggerEnter(Collider other)
     {
         var player = other.gameObject.GetComponent<CharacterController>();
         if (player != null)
         {
             GoodEnd.SetActive(true);
+            step.volume = 0;
         }
 
     }

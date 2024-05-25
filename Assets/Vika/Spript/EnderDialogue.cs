@@ -10,10 +10,12 @@ public class EnderDialogue : MonoBehaviour
     public CharacterController player;
     public GameObject GameplayUI;
     public List<GameObject> Buttons;
+    public PlayerController playerMove;
     // Start is called before the first frame update
     void Start()
     {
         player.enabled = false;
+        playerMove.enabled = false;
         GameplayUI.SetActive(false);
         Mc[current].SetActive(true);
     }
