@@ -72088,7 +72088,7 @@ MonoBehaviour:
   - {fileID: 1892552841}
   - {fileID: 969219019}
   door: {fileID: 3245047378669386967}
-  audio: {fileID: 0}
+  audio: {fileID: 288744161}
 --- !u!65 &1782594022
 BoxCollider:
   m_ObjectHideFlags: 0
