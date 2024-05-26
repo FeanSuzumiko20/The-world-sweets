@@ -4416,6 +4416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GoodEnd: {fileID: 196794588}
+  step: {fileID: 0}
 --- !u!65 &938903863
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9131,6 +9132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GoodEnd: {fileID: 196794588}
+  step: {fileID: 0}
 --- !u!65 &1525631649
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11282,7 +11284,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 0.74
   Loop: 0
   Mute: 0

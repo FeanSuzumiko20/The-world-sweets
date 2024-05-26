@@ -24529,7 +24529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.47668457, y: 196.71834}
+  m_AnchoredPosition: {x: -0.47680664, y: 196.71838}
   m_SizeDelta: {x: 29.846615, y: -421.6367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &677961593
@@ -63213,7 +63213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -21.099976, y: 187.69998}
+  m_AnchoredPosition: {x: -21.100098, y: 187.69995}
   m_SizeDelta: {x: -458.59912, y: -536.7999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1557151070
@@ -85352,11 +85352,6 @@ PrefabInstance:
       propertyPath: valueRectTransform
       value: 
       objectReference: {fileID: 352272093}
-    - target: {fileID: 958924555447678081, guid: 6f2c9e982b59be041bf055726e921cb3,
-        type: 3}
-      propertyPath: m_Volume
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1961026416871309856, guid: 6f2c9e982b59be041bf055726e921cb3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -85470,12 +85465,12 @@ PrefabInstance:
     - target: {fileID: 6582132766943627809, guid: 6f2c9e982b59be041bf055726e921cb3,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -52.400085
+      value: -52.400146
       objectReference: {fileID: 0}
     - target: {fileID: 6582132766943627809, guid: 6f2c9e982b59be041bf055726e921cb3,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -30.014893
+      value: -30.014832
       objectReference: {fileID: 0}
     - target: {fileID: 7855004714703497297, guid: 6f2c9e982b59be041bf055726e921cb3,
         type: 3}
@@ -85654,6 +85649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3848167916979064102, guid: 6f2c9e982b59be041bf055726e921cb3, type: 3}
+    - {fileID: 4033122454417774540, guid: 6f2c9e982b59be041bf055726e921cb3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6f2c9e982b59be041bf055726e921cb3, type: 3}
 --- !u!4 &2138919919 stripped
 Transform:

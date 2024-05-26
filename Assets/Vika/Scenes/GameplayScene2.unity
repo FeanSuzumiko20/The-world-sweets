@@ -10797,11 +10797,6 @@ PrefabInstance:
       propertyPath: valueRectTransform
       value: 
       objectReference: {fileID: 2083869828}
-    - target: {fileID: 958924555447678081, guid: 6f2c9e982b59be041bf055726e921cb3,
-        type: 3}
-      propertyPath: m_Volume
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1961026416871309856, guid: 6f2c9e982b59be041bf055726e921cb3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
