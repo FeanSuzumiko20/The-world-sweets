@@ -7,6 +7,8 @@ public class Hall : MonoBehaviour
     public List<GameObject> Mc;
     public CharacterController player;
     public GameObject GameplayUI;
+    public GameObject GameplayUI2;
+    public GameObject Last;
     public PlayerController playerMove;
     public int current = 0;
     public Animator animator;
@@ -26,6 +28,8 @@ public class Hall : MonoBehaviour
             playerMove.enabled = false;
             animator.SetBool("run", false);
             GameplayUI.SetActive(false);
+            GameplayUI2.SetActive(false);
+            Last.SetActive(false);
             Mc[current].SetActive(true);
             
         }

@@ -9,12 +9,14 @@ public class StarterDialogue : MonoBehaviour
     public CharacterController player;
     public PlayerController playerMove;
     public GameObject GameplayUI;
+    public GameObject GameplayUI2;
     // Start is called before the first frame update
     void Start()
     {
         player.enabled = false;
         playerMove.enabled = false;
         GameplayUI.SetActive(false);
+        GameplayUI2.SetActive(false);
         Mc[current].SetActive(true);
     }
 
@@ -38,6 +40,7 @@ public class StarterDialogue : MonoBehaviour
             player.enabled = true;
             playerMove.enabled = true;
             GameplayUI.SetActive(true);
+            GameplayUI2.SetActive(true);
         }
     }
 
