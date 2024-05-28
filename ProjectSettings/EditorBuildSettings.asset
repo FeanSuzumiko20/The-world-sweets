@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Vika/Scenes/Level2.unity
     guid: ef3a51f8a36e7d041b36b95e54fc4515
+  - enabled: 1
+    path: Assets/Vika/Scenes/Gameplay3.unity
+    guid: a9891a016f7bd9e45a58272fa5c22f42
   m_configObjects: {}

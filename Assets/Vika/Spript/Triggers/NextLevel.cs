@@ -7,10 +7,11 @@ using UnityEngine.SceneManagement;
 public class NextLevel : MonoBehaviour
 {
     public AudioSource audio;
+    public int i;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
         audio.Play();
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(i);
     }
 }

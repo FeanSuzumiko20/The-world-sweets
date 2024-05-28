@@ -9,6 +9,7 @@ public class StarterDialogue : MonoBehaviour
     public CharacterController player;
     public PlayerController playerMove;
     public GameObject GameplayUI;
+    public GameObject GameplayUI3;
     public GameObject GameplayUI2;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class StarterDialogue : MonoBehaviour
         playerMove.enabled = false;
         GameplayUI.SetActive(false);
         GameplayUI2.SetActive(false);
+        GameplayUI3.SetActive(false);
         Mc[current].SetActive(true);
     }
 
@@ -28,11 +30,13 @@ public class StarterDialogue : MonoBehaviour
             Mc[current].SetActive(false);
             current++;
             Mc[current].SetActive(true);
+            GameplayUI3.SetActive(false);
         }
         if (Input.GetMouseButtonDown(0) && current == 23)
         {
             Mc[current].SetActive(false);
             current++;
+            GameplayUI3.SetActive(false);
         }
 
             if (Input.GetMouseButtonDown(0) && current == 24)
@@ -41,6 +45,7 @@ public class StarterDialogue : MonoBehaviour
             playerMove.enabled = true;
             GameplayUI.SetActive(true);
             GameplayUI2.SetActive(true);
+            GameplayUI3.SetActive(false);
         }
     }
 

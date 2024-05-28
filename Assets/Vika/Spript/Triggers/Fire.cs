@@ -6,7 +6,8 @@ public class Fire : MonoBehaviour
 {
     public FireballCaster player2;
     public bool OnZone = false;
-    private void OnTriggerStay(Collider other)
+    public Collider fire;
+    public void OnTriggerStay(Collider other)
     {
         var player = other.gameObject.GetComponent<FireballCaster>();
         if (player != null)

@@ -6,7 +6,9 @@ public class GameMenu : MonoBehaviour
     
 {public GameObject Menu;
     public CharacterController player;
+    public Fire fire;
     public CameraRotation camera;
+    public FireballCaster player2;
     public GameObject UI;
     public GameObject UI2;
     public GameObject UI3;
@@ -21,12 +23,14 @@ public class GameMenu : MonoBehaviour
             UI3.SetActive(false);
             camera.enabled = false;
            player.enabled = false;
+            player2.enabled = false;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
     }
     public void Return()
     {
+        fire.OnTriggerStay(fire.fire);
         UI.SetActive(true);
         UI2.SetActive(true);
         UI3.SetActive(true);
