@@ -17,5 +17,6 @@ public class DialogueTrigger : MonoBehaviour
         Dia.SetActive(true);
         yield return new WaitForSeconds(3);
         Dia.SetActive(false);
+        gameObject.GetComponent<BoxCollider>().enabled = false;
     }
 }
