@@ -3826,6 +3826,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e478549b6c1427d4fa1ca6a08f204c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &415926613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415926601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f03aca988653954683d94561b03969a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 9a3fd49ce7dd1ea48b1e3165bb2eb4d6, type: 3}
 --- !u!114 &415926618 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4033122454417774540, guid: 6f2c9e982b59be041bf055726e921cb3,
